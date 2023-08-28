@@ -1,21 +1,25 @@
 {
-    "name": "astro-pwa-todoapp",
-    "type": "module",
-    "version": "0.0.1",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "astro": "astro",
-        "test": "cypress run"
-    },
-    "dependencies": {
-        "@astrojs/tailwind": "^4.0.0",
-        "astro": "^2.10.14",
-        "tailwindcss": "^3.3.3"
-    },
-    "devDependencies": {
-        "cypress": "^12.17.4"
-    }
+	"name": "astro-pwa-todoapp",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"test": "cypress run",
+		"format": "prettier --write \"**/*.{js,ts,jsx,tsx,md,mdx,json,astro,mjs,cjs}\"",
+		"format:check": "prettier --check \"**/*.{js,ts,jsx,tsx,md,mdx,json,astro,mjs,cjs}\""
+	},
+	"dependencies": {
+		"@astrojs/tailwind": "^4.0.0",
+		"astro": "^2.10.14",
+		"tailwindcss": "^3.3.3"
+	},
+	"devDependencies": {
+		"cypress": "^12.17.4",
+		"prettier": "^3.0.2",
+		"prettier-plugin-astro": "^0.12.0"
+	}
 }
