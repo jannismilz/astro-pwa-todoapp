@@ -1,17 +1,21 @@
 {
-  "name": "astro-pwa-todoapp",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.10.14",
-    "tailwindcss": "^3.3.3"
-  }
+    "name": "astro-pwa-todoapp",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "test": "cypress run"
+    },
+    "dependencies": {
+        "@astrojs/tailwind": "^4.0.0",
+        "astro": "^2.10.14",
+        "tailwindcss": "^3.3.3"
+    },
+    "devDependencies": {
+        "cypress": "^12.17.4"
+    }
 }
