@@ -1,0 +1,17 @@
+name: "Format"
+
+on:
+    pull_request:
+
+jobs:
+    format:
+        name: Check formatting
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check formatting of codebase
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "18.x"
+              run: |
+                  npm install
+                  npm run format

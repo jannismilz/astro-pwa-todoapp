@@ -1,0 +1,17 @@
+name: "Test"
+
+on:
+    pull_request:
+
+jobs:
+    test:
+        name: Test
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run tests
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "18.x"
+              run: |
+                  npm install
+                  npm run test
