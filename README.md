@@ -1,5 +1,8 @@
 # Astro PWA Todo App
 
+![Test](https://github.com/jannismilz/astro-pwa-todoapp/actions/workflows/test.yml/badge.svg)
+![Format](https://github.com/jannismilz/astro-pwa-todoapp/actions/workflows/format.yml/badge.svg)
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
