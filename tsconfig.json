@@ -1,4 +1,8 @@
 {
 	"extends": "astro/tsconfigs/base",
-	"include": ["node_modules/@vite-pwa/astro/index.d.ts"]
+	"include": ["node_modules/@vite-pwa/astro/index.d.ts"],
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "react"
+	}
 }

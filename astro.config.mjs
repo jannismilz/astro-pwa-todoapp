@@ -7,6 +7,8 @@ import tailwind from "@astrojs/tailwind";
 // Helper imports
 import { manifest, seoConfig } from "./utils/seoConfig";
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
 	site: seoConfig.baseURL,
@@ -24,7 +26,11 @@ export default defineConfig({
 				// This removes an errant console.log message from showing up.
 				navigateFallback: null,
 			},
+			devOptions: {
+				enabled: true,
+			},
 		}),
+		react(),
 	],
 	server: {
 		port: 4000,
