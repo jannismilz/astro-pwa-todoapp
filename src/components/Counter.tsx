@@ -1,7 +1,13 @@
 import React, { useState } from "react";
+import getUser from "../../utils/hooks/useAuth";
+import { getTasks } from "../../utils/hooks/tasks";
 
-export default function Counter() {
+export default function Counter({ request }) {
 	const [count, setCount] = useState(0);
+
+	getTasks().then((tasks) => {
+		console.log(tasks);
+	});
 
 	return (
 		<div>

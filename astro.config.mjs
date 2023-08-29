@@ -5,7 +5,7 @@ import AstroPWA from "@vite-pwa/astro";
 import tailwind from "@astrojs/tailwind";
 
 // Helper imports
-import { manifest, seoConfig } from "./utils/seoConfig";
+import { manifest, seoConfig } from "./utils/config";
 
 import react from "@astrojs/react";
 
@@ -20,7 +20,7 @@ export default defineConfig({
 			workbox: {
 				globDirectory: "dist",
 				globPatterns: [
-					"**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico,html}",
+					"**/*.{js,ts,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico,html}",
 				],
 				// Don't fallback on document based (e.g. `/some-page`) requests
 				// This removes an errant console.log message from showing up.
