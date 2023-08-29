@@ -1,3 +1,4 @@
 {
-	"extends": "astro/tsconfigs/base"
+	"extends": "astro/tsconfigs/base",
+	"include": ["node_modules/@vite-pwa/astro/index.d.ts"]
 }
