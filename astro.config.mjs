@@ -9,6 +9,7 @@ import { manifest, seoConfig } from "./utils/seoConfig";
 
 // https://astro.build/config
 export default defineConfig({
+	site: seoConfig.baseURL,
 	integrations: [
 		tailwind(),
 		AstroPWA({
@@ -17,7 +18,7 @@ export default defineConfig({
 			workbox: {
 				globDirectory: "dist",
 				globPatterns: [
-					"**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico}",
+					"**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico,html}",
 				],
 				// Don't fallback on document based (e.g. `/some-page`) requests
 				// This removes an errant console.log message from showing up.
