@@ -20,6 +20,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# Cypress
+# cypress
 cypress/screenshots/**/*
 cypress/videos/**/*
+
+# development
+dev-dist/
