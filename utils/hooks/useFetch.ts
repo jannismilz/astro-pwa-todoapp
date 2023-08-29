@@ -8,13 +8,12 @@ export default async function useFetch(
 ) {
 	const auth = await useAuth();
 
-	// if (!auth) return null;
+	if (!auth) return null;
 
 	const res = await fetch(`${general.backend_url}${url}`, {
 		method,
 		headers: {
-			// Authorization: `Bearer ${auth.authToken}`,
-			Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbWVvbmUiLCJpYXQiOjE2OTMyOTk0NjB9.DAwLNrOi8zW77wYnsRGMKzx6hz6UiSoHkTALnyha5Fg`,
+			Authorization: `Bearer ${auth.authToken}`,
 		},
 		...(body && { body: JSON.stringify(body) }),
 	});
