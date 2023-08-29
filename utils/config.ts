@@ -1,6 +1,10 @@
 // Type imports
 import type { ManifestOptions } from "vite-plugin-pwa";
 
+export const general = {
+	backend_url: "http://localhost:3000",
+};
+
 /**
  * Defines the default SEO configuration for the website.
  */

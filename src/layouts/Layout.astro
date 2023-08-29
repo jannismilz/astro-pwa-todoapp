@@ -19,6 +19,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<script src="/src/pwa.ts"></script>
 		{pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+		<script is:inline src="../../utils/updater" type="module"></script>
 	</head>
 	<body>
 		<slot />
